@@ -73,14 +73,14 @@ async def spam(ctx):
             async for user in reaction.users():
                 if user != client.user:
                     if reaction.emoji == A_EMOJI:
-                        author = random_users[0].name
+                        author = random_users[0]
                     elif reaction.emoji == B_EMOJI:
-                        author = random_users[1].name
+                        author = random_users[1]
                     elif reaction.emoji == C_EMOJI:
-                        author = random_users[2].name
+                        author = random_users[2]
                     elif reaction.emoji == D_EMOJI:
-                        author = random_users[3].name
-                    if user.name == author:
+                        author = random_users[3]
+                    if user == author:
                         correct_users.add(user)
 
     # Check answers
