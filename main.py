@@ -80,7 +80,7 @@ async def spam(ctx):
                         author = random_users[2]
                     elif reaction.emoji == D_EMOJI:
                         author = random_users[3]
-                    if user == author:
+                    if random_message.author == author:
                         correct_users.add(user)
 
     # Check answers
